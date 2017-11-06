@@ -75,9 +75,7 @@ char ip_subnet[16] = "255.255.255.0";
 #define HOSTNAME "ESP8266-OTA-"
 
 // Setup
-const int UPDATE_INTERVAL_SECS = 3600; // every 1 hour
-//10 * 60; // Update every 10 minutes
-
+const int UPDATE_INTERVAL_SECS = 3600; // update every 1 hour
 
 // **** NOKIA display settings
 // Hardware SPI (faster, but must use certain hardware pins):
