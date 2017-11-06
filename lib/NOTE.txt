@@ -1,0 +1,3 @@
+nella libreria WeatherStation ho modificato i files TimeClient.cpp e TimeClient.h per aggiungere la gestione
+dell'ora legale/solare.
+Vedi: https://www.bountysource.com/issues/32795109-timeclient-did-not-pick-up-change-to-daylight-saving-summertime
