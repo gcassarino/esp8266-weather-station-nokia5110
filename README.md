@@ -16,62 +16,21 @@ The following information are displayed:
 
 The date and time are obtained using the WundergroundClient module from the library, I found it easier to use instead of the NTPClient module because the latter does not handle the daylight saving time (DST) while the WundergroundClient already returns the correct DST from the country defined in the code. This way I could use just WundergroundClient module for all functions.
 
-Finally in place of the images with the weather icons I used a font with other weather icons (see credits below). Fonts icons can be edited with any font editor. I inserted the project file created with [Birdfont](https://birdfont.org/) in another repository.
+Finally in place of the images with the weather icons I used a font with other weather icons (see credits below). Fonts icons can be edited with any font editor. I inserted the project file created with [Birdfont](https://birdfont.org/) in another repository TODO.
 
 
 
-## Getting Started
+## Getting Started TODO
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-* wiring, foto della breadboard e indicazioni sui pins
+* wiring, breadboard, pins
 * esp8266 wemos
 * screenshots
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
 this code is a PlatformIO project, open the project from PlatformIO.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Authors
 
@@ -86,6 +45,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments/Credits
 
+* **Daniel Eichhorn** [(squix78)](https://github.com/squix78) for writing the excellent library.
 * Original Weather icon set font from [PIXEDEN](https://www.pixeden.com/icon-fonts/the-icons-font-set-weather)
-* etc
-* etc
+* Nokia font from [DAFONT](https://www.dafont.com/nokia-cellphone.font)
+* please look at this repository for the original copies of licensed works TODO
