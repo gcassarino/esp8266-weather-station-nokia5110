@@ -225,7 +225,7 @@ void setup() {
   }
 
   // UI
-  ui.setTargetFPS(30); // 30
+  ui.setTargetFPS(30);
   ui.setTimePerFrame(10000); //Set the approx. time (ms) a frame is displayed
   ui.disableIndicator();
   // You can change the transition that is used
@@ -267,7 +267,6 @@ void loop() {
 
 }
 
-// OK NOKIA
 void configModeCallback (WiFiManager *myWiFiManager) {
   Serial.println("Entered config mode");
   Serial.println(WiFi.softAPIP());
@@ -287,7 +286,6 @@ void configModeCallback (WiFiManager *myWiFiManager) {
   display.display();
 }
 
-// OK NOKIA
 void drawProgress(Adafruit_PCD8544 *display, int percentage, String label) {
   display->clearDisplay();
   drawProgressBar(display, 2, 12, 80, 10, percentage);
@@ -301,7 +299,6 @@ void drawProgress(Adafruit_PCD8544 *display, int percentage, String label) {
   display->display();
 }
 
-// OK NOKIA
 void drawProgressBar(Adafruit_PCD8544 *display, uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t progress) {
   uint16_t radius = height / 2;
   uint16_t xRadius = x + radius;
@@ -312,7 +309,6 @@ void drawProgressBar(Adafruit_PCD8544 *display, uint16_t x, uint16_t y, uint16_t
   display->fillRoundRect(x + 1, y + 2, maxProgressWidth, height - 4, innerRadius, 1);
 }
 
-// OK NOKIA
 void drawOtaProgress(unsigned int progress, unsigned int total) {
   digitalWrite(BL_PIN, HIGH); // LCD backlight ON
   display.clearDisplay();
@@ -324,7 +320,6 @@ void drawOtaProgress(unsigned int progress, unsigned int total) {
   display.display();
 }
 
-// OK NOKIA
 void updateData(Adafruit_PCD8544 *display) {
   digitalWrite(BL_PIN, HIGH);
   // drawProgress(display, 10, "updating time...");
@@ -343,7 +338,6 @@ void updateData(Adafruit_PCD8544 *display) {
   digitalWrite(BL_PIN, LOW); // LCD backlight OFF
 }
 
-// OK NOKIA
 void drawDateTime(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x, int16_t y) {
   String date = wunderground.getDate();
 
@@ -353,6 +347,7 @@ void drawDateTime(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x
   // Calculates the position based on the width occupied by the character
   // + white space between characters (kerning)
   // in the case of the nokiafc224pt7b font is bxh (6+1)x7 screen pixels
+  // NOTE these values are valid in case the setTextSize = 1, if 2 they are doubled
   uint8_t cursorAlign = getCursorPosX(date.length(), 7, TEXT_ALIGN_CENTER);
 
   display->setTextSize(1);
@@ -397,7 +392,6 @@ void drawDateTime(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x
   display->display();
 }
 
-// OK NOKIA
 void drawCurrentWeather(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x, int16_t y) {
   String temp = wunderground.getCurrentTemp(); //+ char(247) + "C"; // ° degree symbol
   String weatherIcon = wunderground.getTodayIcon();
@@ -445,7 +439,6 @@ void drawCurrentWeather(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int
   display->display();
 }
 
-// OK NOKIA
 void drawForecast(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x, int16_t y) {
   display->setTextSize(1);
   display->setTextWrap(false);
@@ -455,8 +448,7 @@ void drawForecast(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x
   display->display();
 }
 
-// OK NOKIA
-// this function should be called by drawForecast
+// NOTE this function should be called by drawForecast
 void drawForecastDetails(Adafruit_PCD8544 *display, int x, int y, int dayIndex) {
   String day = wunderground.getForecastTitle(dayIndex).substring(0, 3);
   day.toUpperCase();
@@ -475,7 +467,6 @@ void drawForecastDetails(Adafruit_PCD8544 *display, int x, int y, int dayIndex) 
   display->setFont();
 }
 
-// OK NOKIA
 void drawAstronomyMoon(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x, int16_t y){
   String moonPctIlum = wunderground.getMoonPctIlum() + "%";
   String moonPhase = wunderground.getMoonPhase() + " ";
@@ -516,7 +507,6 @@ void drawAstronomyMoon(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int1
 
 }
 
-// OK NOKIA
 void drawAstronomySun(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16_t x, int16_t y){
   display->setTextSize(1);
   display->setTextWrap(false);
@@ -552,7 +542,6 @@ void drawAstronomySun(Adafruit_PCD8544 *display, LCDDisplayUiState* state, int16
   display->display();
 }
 
-// OK NOKIA
 void drawHeaderOverlay(Adafruit_PCD8544 *display, LCDDisplayUiState* state) {
   // String time = timeClient.getFormattedTime().substring(0, 5);
   String time = wundergroundGetFormattedTime().substring(0, 5);
