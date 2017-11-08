@@ -46,6 +46,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments/Credits
 
 * **Daniel Eichhorn** [(squix78)](https://github.com/squix78) for writing the excellent library.
+* [Adafruit Industries](https://www.adafruit.com/)
 * Original Weather icon set font from [PIXEDEN](https://www.pixeden.com/icon-fonts/the-icons-font-set-weather)
 * Nokia font from [DAFONT](https://www.dafont.com/nokia-cellphone.font)
-* please look at this repository for the original copies of licensed works TODO
+* please look at the [resources related repository](https://github.com/gcassarino/weather-station-nokia5110-resources) for the original copies of licensed works.
