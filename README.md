@@ -29,7 +29,7 @@ This project was tested on a Wemos D1 mini clone, please refer to this scheme fo
 
 ### Installing
 
-this code is a PlatformIO project, open the project from PlatformIO.
+This code is a PlatformIO project, open the project from PlatformIO.
 
 
 ## Authors
