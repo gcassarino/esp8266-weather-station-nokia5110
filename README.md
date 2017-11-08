@@ -20,7 +20,7 @@ Finally in place of the images with the weather icons I used a font with other w
 
 
 
-## Getting Started TODO
+## Getting Started
 
 This project was tested on a Wemos D1 mini clone, please refer to this scheme for wiring connections
 
@@ -49,4 +49,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * [Adafruit Industries](https://www.adafruit.com/)
 * Original Weather icon set font from [PIXEDEN](https://www.pixeden.com/icon-fonts/the-icons-font-set-weather)
 * Nokia font from [DAFONT](https://www.dafont.com/nokia-cellphone.font)
-* please look at the [resources related repository](https://github.com/gcassarino/weather-station-nokia5110-resources) for the original copies of licensed works.
+* Please look at the [resources related repository](https://github.com/gcassarino/weather-station-nokia5110-resources) for the original copies of licensed works.
