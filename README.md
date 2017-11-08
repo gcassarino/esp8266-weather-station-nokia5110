@@ -22,10 +22,10 @@ Finally in place of the images with the weather icons I used a font with other w
 
 ## Getting Started TODO
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-* wiring, breadboard, pins
-* esp8266 wemos
-* screenshots
+This project was tested on a Wemos D1 mini clone, please refer to this scheme for wiring connections
+
+![Fritzing scheme](https://github.com/gcassarino/weather-station-nokia5110-resources/blob/master/esp8266-weather-station-nokia5110_schem.jpg)
+
 
 ### Installing
 
