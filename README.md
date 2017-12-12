@@ -16,7 +16,7 @@ The following information are displayed:
 
 The date and time are obtained using the WundergroundClient module from the library, I found it easier to use instead of the NTPClient module because the latter does not handle the daylight saving time (DST) while the WundergroundClient already returns the correct DST from the country defined in the code. This way I could use just WundergroundClient module for all functions.
 
-Finally in place of the images with the weather icons I used a font with other weather icons (see credits below). Fonts icons can be edited with any font editor. I inserted the project file created with [Birdfont](https://birdfont.org/) in another repository TODO.
+Finally in place of the images with the weather icons I used a font with other weather icons (see credits below). Fonts icons can be edited with any font editor. I inserted the project file created with [Birdfont](https://birdfont.org/) in another [repository](https://github.com/gcassarino/weather-station-nokia5110-resources).
 
 
 
