@@ -24,7 +24,7 @@ This project was tested on a Wemos D1 mini clone, please refer to this scheme fo
 
 ![Fritzing scheme](https://github.com/gcassarino/weather-station-nokia5110-resources/blob/master/esp8266-weather-station-nokia5110_schem.jpg)
 
-### todo ###
+### Todo ###
 
 The date and time are obtained using the WundergroundClient module from the library because - at the time of writing - the library did not support DST).~~The WundergroundClient already returns the correct DST from the country defined in the code~~. 
 Fix adding dst suppport, see: https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/WeatherStationDemo/WeatherStationDemo.ino
