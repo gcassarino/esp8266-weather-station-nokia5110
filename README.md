@@ -14,9 +14,7 @@ The following information are displayed:
 * Moon details: phase, rise/fall time, luminosity, age
 * Sun and wind details: sun rise/fall time, wind speed and direction
 
-The date and time are obtained using the WundergroundClient module from the library, I found it easier to use instead of the NTPClient module because the latter does not handle the daylight saving time (DST) while the WundergroundClient already returns the correct DST from the country defined in the code. This way I could use just WundergroundClient module for all functions.
-
-Finally in place of the images with the weather icons I used a font with other weather icons (see credits below). Fonts icons can be edited with any font editor. I inserted the project file created with [Birdfont](https://birdfont.org/) in another [repository](https://github.com/gcassarino/weather-station-nokia5110-resources).
+In place of the images with the weather icons I used a font with other weather icons (see credits below). Fonts icons can be edited with any font editor. I inserted the project file created with [Birdfont](https://birdfont.org/) in another [repository](https://github.com/gcassarino/weather-station-nokia5110-resources).
 
 
 
@@ -25,6 +23,11 @@ Finally in place of the images with the weather icons I used a font with other w
 This project was tested on a Wemos D1 mini clone, please refer to this scheme for wiring connections
 
 ![Fritzing scheme](https://github.com/gcassarino/weather-station-nokia5110-resources/blob/master/esp8266-weather-station-nokia5110_schem.jpg)
+
+### todo ###
+
+The date and time are obtained using the WundergroundClient module from the library because - at the time of writing - the library did not support DST).~~The WundergroundClient already returns the correct DST from the country defined in the code~~. 
+Fix adding dst suppport, see: https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/WeatherStationDemo/WeatherStationDemo.ino
 
 
 ### Installing
